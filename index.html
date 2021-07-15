@@ -63,7 +63,7 @@
       #nav-bar li a {
         padding: 1rem;
         text-decoration: none;
-        color: #e91e63;
+        color: #f06292;
 
         font-weight: 700;
       }
@@ -83,7 +83,7 @@
       }
 
       #about,
-      #price {
+      #product {
         font-size: 2rem;
         margin: 0 auto;
         max-width: 800px;
@@ -99,7 +99,7 @@
       h1 {
         font-size: 6rem;
         font-family: 'Sigmar One', sans-serif;
-        color: #e91e63;
+        color: #f06292;
       }
 
       h2 {
@@ -124,7 +124,7 @@
       }
 
       #container-info p,
-      #buy p {
+      #more p {
         font-size: 2.5rem;
       }
 
@@ -134,25 +134,30 @@
         border-radius: 2px;
 
         color: #fff;
-        
+
         font-size: 2rem;
         background-color: #2b2b2b;
       }
 
-      #submit {
+      #submit, #button-more {
         padding: 1.3rem;
-        background: #e91e63;
+        background: #f06292;
 
         color: #fff;
         font-weight: 700;
         text-transform: uppercase;
         font-size: 1.2rem;
-        border: 1px solid #e91e63;
+        border: 1px solid #f06292;
 
         cursor: pointer;
       }
 
-      #submit:hover {
+      #button-more {
+        border: 1px solid #141414;
+        background: #141414;
+      }
+
+      #submit:hover, #button-more:hover {
         border: 1px solid #64b5f6;
         background: #64b5f6;
       }
@@ -179,7 +184,7 @@
         }
       }
 
-      #prices ul {
+      #products ul {
         text-align: center;
 
         list-style: none;
@@ -191,23 +196,22 @@
         margin: 2rem;
       }
 
-      #prices ul li {
+      #products ul li {
         padding: 2rem;
         background: #64b5f6;
       }
 
-      #prices ul li img {
+      #products ul li img {
         width: 50%;
       }
 
-      #prices ul li:hover {
+      #products ul li:hover {
         border: 4px solid #f06292;
         cursor: pointer;
       }
 
-      #buy {
+      #more {
         background-color: #f06292;
-        margin-top: 4rem;
         margin-bottom: 2rem;
         padding-bottom: 2rem;
 
@@ -219,7 +223,7 @@
         justify-content: center;
       }
 
-      #buy p {
+      #more p {
         max-width: 50%;
         text-align: center;
 
@@ -231,7 +235,7 @@
           width: 40%;
         }
 
-        #buy p {
+        #more p {
           max-width: 90%;
         }
       }
@@ -253,13 +257,13 @@
         <nav id="nav-bar">
           <ul>
             <li>
-              <a href="#about" class="nav-link">About</a>
+              <a href="#about" class="nav-link">Oferta</a>
             </li>
             <li>
-              <a href="#price" class="nav-link">Price</a>
+              <a href="#product" class="nav-link">Produtos</a>
             </li>
             <li>
-              <a href="#buy" class="nav-link">Buy</a>
+              <a href="#more" class="nav-link">Mais informações</a>
             </li>
           </ul>
         </nav>
@@ -269,7 +273,7 @@
       <div id="background-about">
         <section id="about">
           <div id="container-info">
-            <h1 id="about-title">Super Liquidação</h1>
+            <h1 id="about-title">Super Liquidação!</h1>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
               sequi exercitationem nam ratione nemo autem aspernatur tenetur,
@@ -292,8 +296,55 @@
           </div>
         </section>
       </div>
+      <section id="more">
+        <h2>Sobre essa promoção incrível</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+          molestias inventore minus aut cumque harum, dolore aperiam, ad eius
+          laudantium, sed dolorem tenetur ullam quo impedit. Saepe quos id
+          voluptate.
+        </p>
+        <button id="button-more" type="submit">Saber mais!</button>
+      </section>
+      <section id="product">
+        <h2>Alguns produtos</h2>
+        <div id="products">
+          <ul>
+            <li>
+              <img
+                src="https://i.ibb.co/C5djvjB/Component-16.png"
+                alt=""
+              />
+              <div>
+                <strong>Camisetas</strong>
+                <p>20% OFF</p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://i.ibb.co/Pz9qG9d/Component-14.png"
+                alt=""
+              />
+              <div>
+                <strong>Blusas</strong>
+                <p>30% OFF</p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://i.ibb.co/st0XyVk/Component-13.png"
+                alt=""
+              />
+              <div>
+                <strong>Manga longa</strong>
+                <p>40% OFF</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     <footer>
-      <p>&copy; Programmer Cup | by Thalyta Alencar</p>
+      <p>&copy; Super Liquidação | by Thalyta Alencar</p>
     </footer>
   </body>
 </html>
