@@ -1,5 +1,5 @@
-function saveEmail(evt) {
-  evt.preventDefault();
+function saveEmail(e) {
+  e.preventDefault();
 
   let email = document.getElementById('email').value;
 
