@@ -118,11 +118,6 @@
         margin: 3rem 2rem 3rem 2rem;
       }
 
-      #container-info-img {
-        width: 22%;
-        padding-bottom: 2rem;
-      }
-
       #container-info p,
       #more p {
         font-size: 2.5rem;
@@ -168,20 +163,6 @@
         justify-content: center;
 
         margin-top: 2rem;
-      }
-
-      @media (max-width: 660px) {
-        #header-img {
-          width: 60%;
-        }
-
-        #about {
-          flex-direction: column;
-        }
-
-        #container-info {
-          max-width: 95%;
-        }
       }
 
       #products ul {
@@ -230,16 +211,6 @@
         margin-bottom: 2rem;
       }
 
-      @media (max-width: 660px) {
-        #header-img {
-          width: 40%;
-        }
-
-        #more p {
-          max-width: 90%;
-        }
-      }
-
       footer {
         display: flex;
         align-items: center;
@@ -249,6 +220,67 @@
 
         font-size: 1.6rem;
       }
+
+      @media (max-width: 630px) {
+
+        #form {
+          display: flex;
+          flex-direction: column;
+        }
+
+        input, #submit {
+          width: 100%;
+        }
+
+        #submit {
+          margin-top: 0.2rem;
+        }
+
+        #more p {
+          max-width: 90%;
+        }
+
+        #about {
+          flex-direction: column;
+        }
+
+        #container-info {
+          max-width: 95%;
+        }
+      }
+
+      @media (max-width: 490px) {
+        h1 {
+          font-size: 4rem;
+        }
+
+        #container-info p,
+        #more p {
+          font-size: 2rem;
+        }
+
+        #products ul {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          grid-gap: 10px;
+        }
+      }
+
+      @media (max-width: 370px) {
+        #nav-bar ul {
+          font-size: 1.6rem;
+        }
+
+        h1 {
+          font-size: 4rem;
+        }
+
+        #container-info p,
+        #more p {
+          font-size: 2rem;
+        }
+      }
+
     </style>
   </head>
   <body>
