@@ -14,10 +14,10 @@ function saveEmail(e) {
 function saveLocalStorage(email) {
   let emails = [];
 
-  let emailsAlready = JSON.parse(localStorage.getItem('email:'));
+  let emailsAlreadyExists = JSON.parse(localStorage.getItem('email:'));
 
-  if (emailsAlready) {
-    emails.push(...emailsAlready);
+  if (emailsAlreadyExists) {
+    emails.push(...emailsAlreadyExists);
   }
 
   emails.push(email);
